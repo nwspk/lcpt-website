@@ -1,12 +1,14 @@
 <script>
+  const isProduction = !window.location.host.includes("localhost");
+  const api = isProduction
+    ? "https://lcpt-api.herokuapp.com"
+    : "http://lcpt.local:12180";
   import { onMount } from "svelte";
 
   let collegeData = [];
 
   onMount(async () => {
-    const res = await fetch(
-      `http://lcpt.local:12180/user/alumni.json`
-    );
+    const res = await fetch(`${api}/user/alumni.json`);
     collegeData = await res.json();
   });
 </script>
