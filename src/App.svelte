@@ -1,17 +1,24 @@
 <script>
   import Loading from "./Loading.svelte";
 
+  let events = localStorage.events ? JSON.parse(localStorage.events) : null;
   const isProduction = !window.location.host.includes("localhost");
   const api = isProduction
     ? "https://lcpt-api.herokuapp.com"
     : "http://lcpt.local:12180";
   import { onMount } from "svelte";
 
-  let collegeData;
+  function getJSON(url) {
+    return fetch(url).then(r => r.json());
+  }
 
+  let collegeData;
+  $: upcomingEvents = events ? events.futureEvents.reverse() : null;
+  $: pastEvents = events ? events.pastEvents : null;
   onMount(async () => {
-    const res = await fetch(`${api}/api/college.json`);
-    collegeData = await res.json();
+    collegeData = await getJSON(`${api}/api/college.json`);
+    events = collegeData.events;
+    localStorage.events = JSON.stringify(events);
   });
 </script>
 
@@ -32,8 +39,8 @@
     margin: 0 0 0.5em 0;
   }
   .description {
-    width:100%;
-    max-width:800px;
+    width: 100%;
+    max-width: 800px;
     text-align: center;
   }
 
@@ -72,7 +79,7 @@
   </h1>
   <br />
   <section>
-    <p class='description'>
+    <p class="description">
       A fellowship established in 2015 to study, nurture and inspire emerging
       communities of practice across civil society and the public sector in the
       UK. Our goal is the technological operational reform of civic
@@ -319,8 +326,10 @@
       {#each collegeData.campuses as campus}
         <h4>{campus.name}</h4>
         <p>
-          Dean: {campus.dean.name}
-          <br />
+          {#if campus.dean}
+            Dean: {campus.dean.name}
+            <br />
+          {/if}
           Address: {campus.address}
         </p>
       {/each}
@@ -337,4 +346,30 @@
   <h4>Join</h4>
   <h4>Merchandise</h4>
   <h3 id="events">Public Events</h3>
+  <h3>Upcoming</h3>
+  {#if upcomingEvents}
+    <ul>
+      {#each upcomingEvents as event}
+        <li>
+          <a href={event.url}>{event.summary}</a>
+          @ {event.location} - {event.start}
+        </li>
+      {/each}
+    </ul>
+  {:else}
+    <Loading />
+  {/if}
+  <h3>Past</h3>
+  {#if pastEvents}
+    <ul>
+      {#each pastEvents as event}
+        <li>
+          <a href={event.url}>{event.summary}</a>
+          @ {event.location} - {event.start}
+        </li>
+      {/each}
+    </ul>
+  {:else}
+    <Loading />
+  {/if}
 </div>
