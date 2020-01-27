@@ -19,12 +19,22 @@
   * {
     box-sizing: border-box;
   }
+
+  .cont {
+    margin-top: 10vw;
+  }
+
   h1 {
     text-align: center;
     margin: 0 auto;
     font-size: 1.5em;
     text-transform: uppercase;
     margin: 0 0 0.5em 0;
+  }
+  .description {
+    width:100%;
+    max-width:800px;
+    text-align: center;
   }
 
   p {
@@ -55,14 +65,14 @@
 </svelte:head>
 
 <div class="cont">
-  <h1>
+  <h1 class="Clarendon-Heavy">
     The London College of
     <br />
     Political Technologists
   </h1>
   <br />
   <section>
-    <p>
+    <p class='description'>
       A fellowship established in 2015 to study, nurture and inspire emerging
       communities of practice across civil society and the public sector in the
       UK. Our goal is the technological operational reform of civic
