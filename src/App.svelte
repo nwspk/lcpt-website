@@ -127,26 +127,26 @@
     <nav>
       <div>
         <a href="#library" class="Clarendon-Heavy">Library</a>
-        <span class="description">Research, tools, data, and more.</span>
+        <span class="description">Research, tools, data, and more</span>
       </div>
       <div>
         <a href="#news" class="Clarendon-Heavy">News</a>
-        <span class="description">What people have been writing about us.</span>
+        <span class="description">What people have been writing about us</span>
       </div>
       <div>
         <a href="#fellowship" class="Clarendon-Heavy">Fellowship</a>
-        <span class="description">Members recognised for their outstanding achievements.</span>
+        <span class="description">Members recognised for their outstanding achievements</span>
       </div>
        <div>
         <a href="#residency" class="Clarendon-Heavy">Residency Programme</a>
-        <span class="description">Study with us to prepare for your fellowship project.</span>
+        <span class="description">Study with us to prepare for your fellowship</span>
       </div>
        <div>
         <a href="#board" class="Clarendon-Heavy">Board</a>
         <span class="description">Members responsible for the governance of the college</span>
       </div>
        <div>
-        <a href="#campuses" class="Clarendon-Heavy">Board</a>
+        <a href="#campuses" class="Clarendon-Heavy">Campuses</a>
         <span class="description">The college is a confederation of independent campuses in the UK</span>
       </div>
        <div>
@@ -155,11 +155,11 @@
       </div>
       <div>
         <a href="#events" class="Clarendon-Heavy">Public Events</a>
-        <span class="description">Workshops, hackathons, seminars, gamejams, conferences, lectures, and more. </span>
+        <span class="description">Workshops, hackathons, conferences, meetups, lectures, and more</span>
       </div>
        <div>
         <a href="#eventarchive" class="Clarendon-Heavy">Event Archive</a>
-        <span class="description">Everything that's ever happened at the college.</span>
+        <span class="description">Everything that's ever happened at the college</span>
       </div>
     </nav>
   </section>
@@ -447,7 +447,9 @@
     {:else}
       <Loading />
     {/if}
-    <h3>Past</h3>
+      <h2 class="Clarendon-Heavy">
+        <a href="#eventarchive" class="hash-link">Event Archive</a>
+      </h2>
     {#if pastEvents}
       <ul class="events">
         {#each pastEvents as event}
