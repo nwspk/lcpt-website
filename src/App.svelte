@@ -95,7 +95,6 @@
     padding: 0;
   }
 
-
   @media (max-width: 700px) {
     .cont {
       margin-left: 0;
@@ -119,7 +118,12 @@
 <div class="cont">
   <section class="top">
     <p class="description">
-      A society of researchers and practitioners established in 2015 to study, nurture and inspire emerging communities of practice across the public sector and civil society in the UK. Our goal is the operational reform of civic institutions, including (but not limited to) government departments, thinktanks, activist networks, libraries, charities, universities, trade unions, newspapers, and political parties.
+      A society of researchers and practitioners established in 2015 to study,
+      nurture and inspire emerging communities of practice across the public
+      sector and civil society in the UK. Our goal is the operational reform of
+      civic institutions, including (but not limited to) government departments,
+      thinktanks, activist networks, libraries, charities, universities, trade
+      unions, newspapers, and political parties.
     </p>
     <p>
       <a href="mailto:hello@political.tech">hello@political.tech</a>
@@ -135,31 +139,45 @@
       </div>
       <div>
         <a href="#fellowship" class="Clarendon-Heavy">Fellowship</a>
-        <span class="description">Members recognised for their outstanding achievements</span>
+        <span class="description">
+          Members recognised for their outstanding achievements
+        </span>
       </div>
-       <div>
+      <div>
         <a href="#residency" class="Clarendon-Heavy">Residency Programme</a>
-        <span class="description">Study with us to prepare for your fellowship</span>
+        <span class="description">
+          Study with us to prepare for your fellowship
+        </span>
       </div>
-       <div>
+      <div>
         <a href="#board" class="Clarendon-Heavy">Board</a>
-        <span class="description">Members responsible for the governance of the college</span>
+        <span class="description">
+          Members responsible for the governance of the college
+        </span>
       </div>
-       <div>
+      <div>
         <a href="#campuses" class="Clarendon-Heavy">Campuses</a>
-        <span class="description">The college is a confederation of independent campuses in the UK</span>
+        <span class="description">
+          The college is a confederation of independent campuses in the UK
+        </span>
       </div>
-       <div>
+      <div>
         <a href="#membership" class="Clarendon-Heavy">Membership</a>
-        <span class="description">Join a network of pioneers in UK public sector and civil society</span>
+        <span class="description">
+          Join a network of pioneers in UK public sector and civil society
+        </span>
       </div>
       <div>
         <a href="#events" class="Clarendon-Heavy">Public Events</a>
-        <span class="description">Workshops, hackathons, conferences, meetups, lectures, and more</span>
+        <span class="description">
+          Workshops, hackathons, conferences, meetups, lectures, and more
+        </span>
       </div>
-       <div>
+      <div>
         <a href="#eventarchive" class="Clarendon-Heavy">Event Archive</a>
-        <span class="description">Everything that's ever happened at the college</span>
+        <span class="description">
+          Everything that's ever happened at the college
+        </span>
       </div>
     </nav>
   </section>
@@ -447,9 +465,9 @@
     {:else}
       <Loading />
     {/if}
-      <h2 class="Clarendon-Heavy">
-        <a href="#eventarchive" class="hash-link">Event Archive</a>
-      </h2>
+    <h2 class="Clarendon-Heavy" id="eventarchive">
+      <a href="#eventarchive" class="hash-link">Event Archive</a>
+    </h2>
     {#if pastEvents}
       <ul class="events">
         {#each pastEvents as event}
