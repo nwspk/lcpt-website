@@ -28,42 +28,156 @@
   }
 
   .cont {
-    margin-top: 10vw;
+    margin-top: 30px;
+    margin-left: 3vw;
+    max-width: 800px;
+    min-width: 500px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .events-cont {
+    max-width: 1100px;
+  }
+
+  .title-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 6vw;
+    margin-top: 6vw;
+  }
+
+  .title-cont img {
+    height: 122px;
+    margin-top: 20px;
+    margin-right: 20px;
   }
 
   h1 {
-    text-align: center;
-    margin: 0 auto;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    margin: 0 0 0.5em 0;
-  }
-  .description {
-    width: 100%;
-    max-width: 800px;
-    text-align: center;
+    font-size: 400%;
+    line-height: 70px;
+    margin-top: 20px;
+    padding-top: 0;
+    margin-bottom: 0;
   }
 
-  p {
-    margin: 1em auto;
+  h2 {
+    font-size: 350%;
+    margin: 0;
+    margin-top: 20px;
   }
 
-  @media (min-width: 480px) {
-    h1 {
-      font-size: 2em;
-    }
-  }
-  section {
-    padding: 0 10vw;
-    border-left: 1px solid rgba(0, 0, 0, 0.3);
-  }
-
+  h1,
+  h2,
   h3 {
-    margin-top: 5vw;
-    padding: 10vw 10vw;
-    background-image: url("/rust.jpg");
-    background-size: cover;
-    color: white;
+    text-align: inherit;
+  }
+
+  .Clarendon-Heavy {
+    font-family: ClarendonBTWXX-Heavy, Georgia, "Times New Roman", Times, serif;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  section {
+    padding: 0 3vw;
+    position: relative;
+    border: 1px solid #ddd;
+    border-top: 5px solid #333;
+    margin: 40px;
+    width: 100%;
+    /* text-align:justify; */
+  }
+
+  section.no-bar {
+    border-top: 1px solid #ddd;
+  }
+
+  .link-cont {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 30px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+
+  nav > div {
+    width: 50%;
+    padding: 10px 0;
+    flex: 0 1 auto;
+  }
+
+  a:not(.hash-link) {
+    padding: 0;
+    text-decoration: none;
+    color: #1d70b8;
+  }
+
+  nav > div > .description {
+    display: block;
+    opacity: 0.8;
+  }
+
+  .events {
+    padding: 0;
+  }
+
+  .event {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+  .event .datetime {
+    flex: 1 0 auto;
+    text-align: center;
+    width: 25%;
+  }
+  .event .body {
+    flex: 1 1 auto;
+    width: 75%;
+    padding-left: 14px;
+    min-width: 500px;
+  }
+  .event .date {
+    font-weight: bold;
+    font-size: 3em;
+  }
+
+  .event .title {
+    font-size: 200%;
+    font-weight: bold;
+    display:block;
+    color:#333;
+  }
+  .event .organiser {
+    font-size:100%;
+    color:#888;
+    text-decoration:underline;
+  }
+
+  h2 > a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  @media (max-width: 700px) {
+    .cont {
+      margin-left: 0;
+    }
+
+    section {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 </style>
 
@@ -71,14 +185,16 @@
   <title>London College of Political Technologists</title>
 </svelte:head>
 
-<div class="cont">
+<div class="title-cont">
+  <img src="/icon.png" alt="" />
   <h1 class="Clarendon-Heavy">
     The London College of
     <br />
     Political Technologists
   </h1>
-  <br />
-  <section>
+</div>
+<div class="cont">
+  <section class="no-bar">
     <p class="description">
       A fellowship established in 2015 to study, nurture and inspire emerging
       communities of practice across civil society and the public sector in the
@@ -87,17 +203,33 @@
       thinktanks, activist networks, libraries, charities, trade unions,
       newspapers, and political parties.
     </p>
+    <p>
+      <a href="mailto:hello@political.tech">hello@political.tech</a>
+    </p>
+    <nav>
+      <div>
+        <a href="#library" class="Clarendon-Heavy">Library</a>
+        <span class="description">This link goes to ...</span>
+      </div>
+      <div>
+        <a href="#news" class="Clarendon-Heavy">News</a>
+        <span class="description">This link goes to ...</span>
+      </div>
+      <div>
+        <a href="#fellowship" class="Clarendon-Heavy">Fellowship</a>
+        <span class="description">This link goes to ...</span>
+      </div>
+      <div>
+        <a href="#events" class="Clarendon-Heavy">Events</a>
+        <span class="description">This link goes to ...</span>
+      </div>
+    </nav>
   </section>
 
-  <h3 id="contact" style="background-image:url('/typewriter.jpg');">Contact</h3>
-  <section>
-    <ul>
-      <li>hello@political.tech</li>
-    </ul>
-  </section>
-
-  <h3 id="approach" style="background-image:url('/gear.jpg');">Approach</h3>
-  <section>
+  <section id="approach">
+    <h2 class="Clarendon-Heavy">
+      <a href="#approach" class="hash-link">Approach</a>
+    </h2>
     <p>
       Our approach responds to limitations in the model of think tanks and
       university research centres which:
@@ -160,8 +292,10 @@
     </p>
   </section>
 
-  <h3 id="library" style="background-image:url('/library.jpg');">Library</h3>
-  <section>
+  <section id="library">
+    <h2 class="Clarendon-Heavy">
+      <a href="#library" class="hash-link">Library</a>
+    </h2>
     <h4>Latest Research</h4>
     <ul>
       <li>
@@ -191,10 +325,10 @@
       <li>Election Tech</li>
     </ul>
   </section>
-  <h3 id="news" style="background-image:url('/typewriter.jpg');">
-    News Coverage
-  </h3>
-  <section>
+  <section id="news">
+    <h2 class="Clarendon-Heavy">
+      <a href="#news" News class="hash-link">News Coverage</a>
+    </h2>
     <li>
       “Election Results Mean All Nighters For Politicians, Pundits—And Wikipedia
       Editors”, Fortune, 13 December 2019
@@ -208,8 +342,10 @@
       Telegraph, 18 September 2018
     </li>
   </section>
-  <h3 id="fellowship" style="background-image:url('/gear.jpg');">Fellowship</h3>
-  <section>
+  <section id="fellowship">
+    <h2 class="Clarendon-Heavy">
+      <a href="#fellowship" class="hash-link">Fellowship</a>
+    </h2>
     <p>
       Fellows are members of the London College of Political Technologists who
       are recognised as having created a highly influential piece of research or
@@ -224,8 +360,8 @@
     <h5>Notable Alumni</h5>
     <ul>
       <!-- {#each alumni as alum}
-    <li>{alum.name}</li>
-  {/each} -->
+      <li>{alum.name}</li>
+    {/each} -->
       <li>Josie Fraser Head of Social Technology, DCMS</li>
       <li>Imeh Akpan GOV.UK User Insights Lead, Government Digital Service</li>
       <li>
@@ -256,8 +392,10 @@
       <li>Jo Kerr Head of Digital, Turn2us anti-poverty charity</li>
     </ul>
   </section>
-  <h3 id="residency">Residency Programme</h3>
-  <section>
+  <section id="residency">
+    <h2 class="Clarendon-Heavy">
+      <a href="#residency" Residency class="hash-link">Residency Programme</a>
+    </h2>
     <p>
       LCPT’s campuses admit students for a six month residency of research and
       teaching in preparation for a fellowship application. Residencies start
@@ -266,8 +404,10 @@
       process, but prospective students can nominate their preferred campus.
     </p>
   </section>
-  <h3 id="board">Board</h3>
-  <section>
+  <section id="board">
+    <h2 class="Clarendon-Heavy">
+      <a href="#board" class="hash-link">Board</a>
+    </h2>
     <p>
       The board of the London College of Political Technology is responsible for
       student admissions, disbursement of scholarships, co-ordination of
@@ -320,8 +460,10 @@
       and digital marketing.
     </p>
   </section>
-  <h3 id="campuses">Campuses</h3>
-  <section>
+  <section id="campuses">
+    <h2 class="Clarendon-Heavy">
+      <a href="#campuses" class="hash-link">Campuses</a>
+    </h2>
     {#if collegeData}
       {#each collegeData.campuses as campus}
         <h4>{campus.name}</h4>
@@ -337,39 +479,69 @@
       <Loading />
     {/if}
   </section>
+  <section id="membership">
+    <h2 class="Clarendon-Heavy">
+      <a href="#membership" class="hash-link">Membership</a>
+    </h2>
+    <p>
+      To be a member of The London College of Political Technology is a
+      commitment to…
+    </p>
+    <h4>Join</h4>
+    <h4>Merchandise</h4>
+  </section>
+</div>
 
-  <h3 id="membership">Membership</h3>
-  <p>
-    To be a member of The London College of Political Technology is a commitment
-    to…
-  </p>
-  <h4>Join</h4>
-  <h4>Merchandise</h4>
-  <h3 id="events">Public Events</h3>
-  <h3>Upcoming</h3>
-  {#if upcomingEvents}
-    <ul>
-      {#each upcomingEvents as event}
-        <li>
-          <a href={event.url}>{event.summary}</a>
-          @ {event.location} - {event.start}
-        </li>
-      {/each}
-    </ul>
-  {:else}
-    <Loading />
-  {/if}
-  <h3>Past</h3>
-  {#if pastEvents}
-    <ul>
-      {#each pastEvents as event}
-        <li>
-          <a href={event.url}>{event.summary}</a>
-          @ {event.location} - {event.start}
-        </li>
-      {/each}
-    </ul>
-  {:else}
-    <Loading />
-  {/if}
+<div class="events-cont cont">
+  <section id="events">
+    <h2 class="Clarendon-Heavy">
+      <a href="#events" class="hash-link">Public Events</a>
+    </h2>
+    <div class="link-cont">
+      <a href="asdfasdf.ics">subscribe</a>
+    </div>
+    <h4>Upcoming</h4>
+    {#if upcomingEvents}
+      <ul class="events">
+        {#each upcomingEvents as event}
+          <li class="event">
+            <div class="datetime">
+              <span class="date">03</span>
+              <br />
+              <span class="month">SEP</span>
+              <br />
+              <br />
+              <span class="time">7:00pm - 10:00pm</span>
+              <br />
+              <span class="location">Newspeak House - Hall</span>
+            </div>
+            <div class="body">
+              <a href={event.url} class="title Clarendon-Bold">{event.summary}</a>
+              <a href={event.organizer.val} class="organiser">{event.organizer.params.CN}</a>
+
+              <br />
+              <p>
+                {@html event.description}
+              </p>
+            </div>
+          </li>
+        {/each}
+      </ul>
+    {:else}
+      <Loading />
+    {/if}
+    <h4>Past</h4>
+    {#if pastEvents}
+      <ul>
+        {#each pastEvents as event}
+          <li>
+            <a href={event.url}>{event.summary}</a>
+            @ {event.location} - {event.start}
+          </li>
+        {/each}
+      </ul>
+    {:else}
+      <Loading />
+    {/if}
+  </section>
 </div>
