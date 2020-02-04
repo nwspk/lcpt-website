@@ -232,12 +232,7 @@
 <div class="cont">
   <section class="top">
     <p class="description">
-      A fellowship established in 2015 to study, nurture and inspire emerging
-      communities of practice across civil society and the public sector in the
-      UK. Our goal is the technological operational reform of civic
-      institutions, including (but not limited to) government departments,
-      thinktanks, activist networks, libraries, charities, trade unions,
-      newspapers, and political parties.
+      A society of researchers and practitioners established in 2015 to study, nurture and inspire emerging communities of practice across the public sector and civil society in the UK. Our goal is the operational reform of civic institutions, including (but not limited to) government departments, thinktanks, activist networks, libraries, charities, universities, trade unions, newspapers, and political parties.
     </p>
     <p>
       <a href="mailto:hello@political.tech">hello@political.tech</a>
@@ -245,19 +240,39 @@
     <nav>
       <div>
         <a href="#library" class="Clarendon-Heavy">Library</a>
-        <span class="description">This link goes to ...</span>
+        <span class="description">Research, tools, data, and more.</span>
       </div>
       <div>
         <a href="#news" class="Clarendon-Heavy">News</a>
-        <span class="description">This link goes to ...</span>
+        <span class="description">What people have been writing about us.</span>
       </div>
       <div>
         <a href="#fellowship" class="Clarendon-Heavy">Fellowship</a>
-        <span class="description">This link goes to ...</span>
+        <span class="description">Members recognised for their outstanding achievements.</span>
+      </div>
+       <div>
+        <a href="#residency" class="Clarendon-Heavy">Residency Programme</a>
+        <span class="description">Study with us to prepare for your fellowship project.</span>
+      </div>
+       <div>
+        <a href="#board" class="Clarendon-Heavy">Board</a>
+        <span class="description">Members responsible for the governance of the college</span>
+      </div>
+       <div>
+        <a href="#campuses" class="Clarendon-Heavy">Board</a>
+        <span class="description">The college is a confederation of independent campuses in the UK</span>
+      </div>
+       <div>
+        <a href="#membership" class="Clarendon-Heavy">Membership</a>
+        <span class="description">Join a network of pioneers in UK public sector and civil society</span>
       </div>
       <div>
-        <a href="#events" class="Clarendon-Heavy">Events</a>
-        <span class="description">This link goes to ...</span>
+        <a href="#events" class="Clarendon-Heavy">Public Events</a>
+        <span class="description">Workshops, hackathons, seminars, gamejams, conferences, lectures, and more. </span>
+      </div>
+       <div>
+        <a href="#eventarchive" class="Clarendon-Heavy">Event Archive</a>
+        <span class="description">Everything that's ever happened at the college.</span>
       </div>
     </nav>
   </section>
