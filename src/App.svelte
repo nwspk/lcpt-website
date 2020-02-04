@@ -75,6 +75,7 @@
     font-family: ClarendonBTWXX-Roman, Georgia, "Times New Roman", Times, serif;
     font-weight: normal;
     font-style: normal;
+    padding-left:1vw;
   }
 
   h1,
@@ -137,14 +138,15 @@
     flex-direction: row;
     justify-content: left;
     flex-wrap: wrap;
-    margin-top:5px;
+    margin-top: 5px;
   }
   .event .datetime {
     flex: 1 0 auto;
     text-align: center;
     width: 25%;
-    color: #fff;
+    color: #f2f2f2;
     background: #333;
+    box-shadow: inset 0 0 20px 4px rgba(0, 0, 0, 0.3);
   }
   .event .datetime-cont {
     font-family: monospace;
@@ -158,7 +160,7 @@
     width: 75%;
     padding-left: 25px;
     min-width: 500px;
-    padding-top:0.5vw;
+    padding-top: 0.5vw;
     /* border-left:3px solid #333; */
   }
 
@@ -174,6 +176,19 @@
     text-decoration: underline;
   }
 
+  .past .body .title {
+    color: #888;
+  }
+  .past .body .organiser {
+    color: #999;
+  }
+  .past .button {
+    background: #999;
+  }
+  .past .datetime {
+    background: #888;
+  }
+
   h2 > a {
     color: inherit;
     text-decoration: none;
@@ -184,7 +199,7 @@
     /* border: 2px solid rgb(221, 221, 221); */
     background-color: #333;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-    color: #fff !important;
+    color: #f2f2f2 !important;
     padding: 30px 50px 10px 20px !important;
     display: inline-block;
     margin-bottom: 50px;
@@ -521,16 +536,15 @@
     <div class="link-cont">
       <a href="asdfasdf.ics">subscribe</a>
     </div>
-    <h3>Upcoming</h3>
     {#if upcomingEvents}
       <ul class="events">
         {#each upcomingEvents as event}
           <li class="event" id={`event-${event.uid}`}>
             <a class="datetime" href={`#event-${event.uid}`}>
               <div class="datetime-cont">
-              <div>19:00 03 JAN 2020</div>
-              <div>NEWSPEAK HOUSE,</div>
-              <div>GREAT HALL</div>
+                <div>19:00 03 JAN 2020</div>
+                <div>NEWSPEAK HOUSE,</div>
+                <div>GREAT HALL</div>
               </div>
             </a>
             <div class="body">
@@ -561,11 +575,36 @@
     {/if}
     <h3>Past</h3>
     {#if pastEvents}
-      <ul>
+      <ul class="events past">
         {#each pastEvents as event}
-          <li>
-            <a href={event.url}>{event.summary}</a>
-            @ {event.location} - {event.start}
+          <li class="event" id={`event-${event.uid}`}>
+            <a class="datetime" href={`#event-${event.uid}`}>
+              <div class="datetime-cont">
+                <div>19:00 03 JAN 2020</div>
+                <div>NEWSPEAK HOUSE,</div>
+                <div>GREAT HALL</div>
+              </div>
+            </a>
+            <div class="body">
+              <a href={event.url} class="title Clarendon-Heavy" target="_blank">
+                {event.summary}
+              </a>
+              <a href={event.organizer.val} class="organiser" target="_blank">
+                {event.organizer.params.CN}
+              </a>
+
+              <br />
+              <p>
+                {@html event.description}
+              </p>
+              <a
+                href={event.url}
+                class="button Clarendon-Heavy"
+                target="_blank">
+                View Event →
+              </a>
+              <br />
+            </div>
           </li>
         {/each}
       </ul>
