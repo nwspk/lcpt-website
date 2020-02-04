@@ -9,3 +9,9 @@ body {
     background-image: url(/concrete.png);
     background-repeat: repeat;
 }
+
+a:not(.hash-link) {
+    padding: 0;
+    text-decoration: none;
+    color: #1d70b8;
+}

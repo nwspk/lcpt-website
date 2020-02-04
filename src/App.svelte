@@ -28,7 +28,7 @@
   }
 
   .cont {
-    margin-top: 30px;
+    margin-top: 2vw;
     margin-left: 3vw;
     max-width: 800px;
     min-width: 500px;
@@ -52,7 +52,7 @@
   .title-cont img {
     height: 122px;
     margin-top: 20px;
-    margin-right: 20px;
+    margin-right: 40px;
   }
 
   h1 {
@@ -67,6 +67,14 @@
     font-size: 350%;
     margin: 0;
     margin-top: 20px;
+    white-space: nowrap;
+  }
+
+  h3 {
+    font-size: 200%;
+    font-family: ClarendonBTWXX-Roman, Georgia, "Times New Roman", Times, serif;
+    font-weight: normal;
+    font-style: normal;
   }
 
   h1,
@@ -84,15 +92,15 @@
   section {
     padding: 0 3vw;
     position: relative;
-    border: 1px solid #ddd;
-    border-top: 5px solid #333;
-    margin: 40px;
+    /* border: 1px solid #ddd; */
+    /* border-top: 5px solid #333; */
+    margin: 2vw;
     width: 100%;
     /* text-align:justify; */
   }
 
-  section.no-bar {
-    border-top: 1px solid #ddd;
+  section.top {
+    margin-top: 1vw;
   }
 
   .link-cont {
@@ -115,12 +123,6 @@
     flex: 0 1 auto;
   }
 
-  a:not(.hash-link) {
-    padding: 0;
-    text-decoration: none;
-    color: #1d70b8;
-  }
-
   nav > div > .description {
     display: block;
     opacity: 0.8;
@@ -135,38 +137,57 @@
     flex-direction: row;
     justify-content: left;
     flex-wrap: wrap;
+    margin-top:5px;
   }
   .event .datetime {
     flex: 1 0 auto;
     text-align: center;
     width: 25%;
+    color: #fff;
+    background: #333;
+  }
+  .event .datetime-cont {
+    font-family: monospace;
+    /* background:#333; */
+    padding: 1vw;
+    /* border-bottom:5px solid white; */
+    text-align: left;
   }
   .event .body {
     flex: 1 1 auto;
     width: 75%;
-    padding-left: 14px;
+    padding-left: 25px;
     min-width: 500px;
-  }
-  .event .date {
-    font-weight: bold;
-    font-size: 3em;
+    padding-top:0.5vw;
+    /* border-left:3px solid #333; */
   }
 
   .event .title {
     font-size: 200%;
     font-weight: bold;
-    display:block;
-    color:#333;
+    display: block;
+    color: #333;
   }
   .event .organiser {
-    font-size:100%;
-    color:#888;
-    text-decoration:underline;
+    font-size: 100%;
+    color: #888;
+    text-decoration: underline;
   }
 
   h2 > a {
     color: inherit;
     text-decoration: none;
+  }
+
+  .button {
+    /* border-radius: 4px; */
+    /* border: 2px solid rgb(221, 221, 221); */
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    color: #fff !important;
+    padding: 30px 50px 10px 20px !important;
+    display: inline-block;
+    margin-bottom: 50px;
   }
 
   @media (max-width: 700px) {
@@ -186,7 +207,7 @@
 </svelte:head>
 
 <div class="title-cont">
-  <img src="/icon.png" alt="" />
+  <img src="/icon.svg" alt="" />
   <h1 class="Clarendon-Heavy">
     The London College of
     <br />
@@ -194,7 +215,7 @@
   </h1>
 </div>
 <div class="cont">
-  <section class="no-bar">
+  <section class="top">
     <p class="description">
       A fellowship established in 2015 to study, nurture and inspire emerging
       communities of practice across civil society and the public sector in the
@@ -296,7 +317,7 @@
     <h2 class="Clarendon-Heavy">
       <a href="#library" class="hash-link">Library</a>
     </h2>
-    <h4>Latest Research</h4>
+    <h3>Latest Research</h3>
     <ul>
       <li>
         The Election Tech Handbook: the primary resource & community for
@@ -317,7 +338,7 @@
         targeting them. Has been installed by over 30,000 users.
       </li>
     </ul>
-    <h4>Collections</h4>
+    <h3>Collections</h3>
     <ul>
       <li>Discussion spaces</li>
       <li>Jobs boards</li>
@@ -351,12 +372,12 @@
       are recognised as having created a highly influential piece of research or
       made a landmark discovery.
     </p>
-    <h4>Apply for Fellowship</h4>
+    <h3>Apply for Fellowship</h3>
     <p>
       Fellowship candidates may submit their projects or discoveries for
       consideration [by some process].
     </p>
-    <h4>Fellowship Directory</h4>
+    <h3>Fellowship Directory</h3>
     <h5>Notable Alumni</h5>
     <ul>
       <!-- {#each alumni as alum}
@@ -413,20 +434,20 @@
       student admissions, disbursement of scholarships, co-ordination of
       peer-review, and appointment of fellows.
     </p>
-    <h4>Edward Saperia</h4>
+    <h3>Edward Saperia</h3>
     <p>
       is the founder of the London College of Political Technology and Dean of
       Newspeak House campus. He was previously Community Strategist at The Green
       Party and Techhub, and Conference Director at Wikimania 2014. He began his
       career at Barclays Investment Bank.
     </p>
-    <h4>Mustafa Warsi</h4>
+    <h3>Mustafa Warsi</h3>
     <p>
       is a Quantitative Researcher at the hedge fund Marshall Wace and Dean of
       Fahrenheit campus. He studied Mathematics at the University of Cambridge
       and began his career at JP Morgan.
     </p>
-    <h4>Ned Younger</h4>
+    <h3>Ned Younger</h3>
     <p>
       is a Director at Koreo, and Dean of the [Impact Hub Islington] campus.
       Since joining Koreo in 2010 he has specialised in building partnerships
@@ -437,7 +458,7 @@
       development with partners including The Local Trust and Greater London
       Authority.
     </p>
-    <h4>Stephanie Sherman</h4>
+    <h3>Stephanie Sherman</h3>
     <p>
       is a director, researcher, curator, and strategist working across design,
       art, and culture. She is Dean of Suspicion campus. Stephanie reprograms
@@ -448,7 +469,7 @@
       technologists, media-makers, urbanists, and neighbors. Stephanie is
       currently completing a PhD in Design at the University of California.
     </p>
-    <h4>Sam Gilbert</h4>
+    <h3>Sam Gilbert</h3>
     <p>
       is an entrepreneur and researcher working at the intersection of politics
       and technology. He was Employee No.1 and Chief Marketing Officer at Bought
@@ -466,7 +487,7 @@
     </h2>
     {#if collegeData}
       {#each collegeData.campuses as campus}
-        <h4>{campus.name}</h4>
+        <h3>{campus.name}</h3>
         <p>
           {#if campus.dean}
             Dean: {campus.dean.name}
@@ -487,8 +508,8 @@
       To be a member of The London College of Political Technology is a
       commitment to…
     </p>
-    <h4>Join</h4>
-    <h4>Merchandise</h4>
+    <h3>Join</h3>
+    <h3>Merchandise</h3>
   </section>
 </div>
 
@@ -500,29 +521,37 @@
     <div class="link-cont">
       <a href="asdfasdf.ics">subscribe</a>
     </div>
-    <h4>Upcoming</h4>
+    <h3>Upcoming</h3>
     {#if upcomingEvents}
       <ul class="events">
         {#each upcomingEvents as event}
-          <li class="event">
-            <div class="datetime">
-              <span class="date">03</span>
-              <br />
-              <span class="month">SEP</span>
-              <br />
-              <br />
-              <span class="time">7:00pm - 10:00pm</span>
-              <br />
-              <span class="location">Newspeak House - Hall</span>
-            </div>
+          <li class="event" id={`event-${event.uid}`}>
+            <a class="datetime" href={`#event-${event.uid}`}>
+              <div class="datetime-cont">
+              <div>19:00 03 JAN 2020</div>
+              <div>NEWSPEAK HOUSE,</div>
+              <div>GREAT HALL</div>
+              </div>
+            </a>
             <div class="body">
-              <a href={event.url} class="title Clarendon-Bold">{event.summary}</a>
-              <a href={event.organizer.val} class="organiser">{event.organizer.params.CN}</a>
+              <a href={event.url} class="title Clarendon-Heavy" target="_blank">
+                {event.summary}
+              </a>
+              <a href={event.organizer.val} class="organiser" target="_blank">
+                {event.organizer.params.CN}
+              </a>
 
               <br />
               <p>
                 {@html event.description}
               </p>
+              <a
+                href={event.url}
+                class="button Clarendon-Heavy"
+                target="_blank">
+                Register Now →
+              </a>
+              <br />
             </div>
           </li>
         {/each}
@@ -530,7 +559,7 @@
     {:else}
       <Loading />
     {/if}
-    <h4>Past</h4>
+    <h3>Past</h3>
     {#if pastEvents}
       <ul>
         {#each pastEvents as event}
