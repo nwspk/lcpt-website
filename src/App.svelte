@@ -14,12 +14,13 @@
   }
 
   let collegeData;
-  $: upcomingEvents = events ? events.futureEvents.reverse() : null;
-  $: pastEvents = events ? events.pastEvents : null;
+  let upcomingEvents = events && events.upcomingEvents;
+  let pastEvents = events && events.pastEvents;
   onMount(async () => {
     collegeData = await getJSON(`${api}/api/college.json`);
-    events = collegeData.events;
-    localStorage.events = JSON.stringify(events);
+    upcomingEvents = await getJSON(`${api}/api/upcomingEvents.json`);
+    pastEvents = await getJSON(`${api}/api/pastEvents.json`);
+    localStorage.events = JSON.stringify({ upcomingEvents, pastEvents });
   });
 </script>
 
