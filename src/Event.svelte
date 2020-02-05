@@ -41,14 +41,15 @@
   .event .body {
     flex: 1 1 auto;
     width: 75%;
-    padding-left: 25px;
-    min-width: 500px;
+    padding-left: 1vw;
+    min-width: 300px;
     padding-top: 0.5vw;
     /* border-left:3px solid #333; */
   }
 
   .event .title {
-    font-size: 200%;
+    width:72vw;
+    font-size: 3vw;
     font-weight: bold;
     display: block;
     color: #333;
@@ -70,6 +71,12 @@
   }
   .past .datetime {
     background: #888;
+  }
+
+  @media(max-width:700px) {
+    .event .title {
+      font-size: 5vw;
+    }
   }
 </style>
 

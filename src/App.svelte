@@ -29,7 +29,7 @@
     margin-top: 2vw;
     margin-left: 3vw;
     max-width: 800px;
-    min-width: 500px;
+    min-width: 300px;
     width: 80%;
     display: flex;
     flex-wrap: wrap;
@@ -48,9 +48,9 @@
   }
 
   .title-cont img {
-    height: 122px;
+    height: 10.5vw;
     margin-top: 20px;
-    margin-right: 40px;
+    margin-right: 5vw;
   }
 
   section {
@@ -84,7 +84,8 @@
   nav > div {
     width: 50%;
     padding: 10px 0;
-    flex: 0 1 auto;
+    flex: 1 1 auto;
+    min-width:200px;
   }
 
   nav > div > .description {
@@ -96,16 +97,6 @@
     padding: 0;
   }
 
-  @media (max-width: 700px) {
-    .cont {
-      margin-left: 0;
-    }
-
-    section {
-      margin-left: 0;
-      margin-right: 0;
-    }
-  }
 </style>
 
 <div class="title-cont">
