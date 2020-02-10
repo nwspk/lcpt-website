@@ -1,6 +1,8 @@
 <script>
   import Loading from "./Loading.svelte";
   import Event from "./Event.svelte";
+  import Reveal from "./Reveal.svelte";
+  import Form from "./Form.svelte";
 
   let events = localStorage.events ? JSON.parse(localStorage.events) : null;
   const isProduction = !window.location.host.includes("localhost");
@@ -85,7 +87,7 @@
     width: 50%;
     padding: 10px 0;
     flex: 1 1 auto;
-    min-width:200px;
+    min-width: 200px;
   }
 
   nav > div > .description {
@@ -96,7 +98,6 @@
   .events {
     padding: 0;
   }
-
 </style>
 
 <div class="title-cont">
@@ -178,66 +179,75 @@
     <h2 class="Clarendon-Heavy">
       <a href="#approach" class="hash-link">Approach</a>
     </h2>
-    <p>
-      Our approach responds to limitations in the model of think tanks and
-      university research centres which:
-    </p>
-    <ol>
+    <Reveal>
+      <div slot="less">
+        <p>
+          Our approach responds to limitations in the model of think tanks and
+          university research centres which:
+        </p>
+        <ol>
+          <li>
+            Determine research questions internally, with academic literature
+            providing the main external reference points (“inside-out” approach)
+          </li>
+          <li>
+            Publish reports in formats (print / pdf) and media (eg paywalled
+            academic journals) which impede discoverability by wider audiences
+          </li>
+          <li>
+            Disseminate research findings through channels which have limited
+            scalability and measurability (eg launch events)
+          </li>
+          <li>
+            Find it difficult to attribute real-world decisions to research
+          </li>
+          <li>
+            Produce outputs which are static, leading to slow decay over time
+          </li>
+          <li>Operate as closed communities</li>
+        </ol>
+      </div>
+      <div slot="more">
+        <p>By contrast we:</p>
 
-      <li>
-        Determine research questions internally, with academic literature
-        providing the main external reference points (“inside-out” approach)
-      </li>
-      <li>
-        Publish reports in formats (print / pdf) and media (eg paywalled
-        academic journals) which impede discoverability by wider audiences
-      </li>
-      <li>
-        Disseminate research findings through channels which have limited
-        scalability and measurability (eg launch events)
-      </li>
-      <li>Find it difficult to attribute real-world decisions to research</li>
-      <li>Produce outputs which are static, leading to slow decay over time</li>
-      <li>Operate as closed communities</li>
-    </ol>
+        <li>
+          Determine focus areas based on user research and insight into unmet
+          needs (“outside-in” approach)
+        </li>
+        <li>
+          Produce outputs that are inherently re-usable and discoverable at a
+          URL – for example, software-as-a-service products, data sets, content
+          in HTML format, APIs, wikis, training manuals
+        </li>
+        <li>
+          Disseminate outputs through networks and scalable digital channels,
+          including “inbound” channels such as Search Engine Optimization /
+          Content Marketing and API
+        </li>
+        <li>
+          Measure impact using volume of inbound hyperlinks, API calls, app
+          installs, and downloads
+        </li>
+        <li>
+          Produce outputs which are dynamic: over time, they are iterated,
+          improved, or deprecated if no longer relevant. New fellows often build
+          on outputs developed by alumni
+        </li>
+        <li>Operate as an open community</li>
 
-    <p>By contrast we:</p>
-
-    <li>
-      Determine focus areas based on user research and insight into unmet needs
-      (“outside-in” approach)
-    </li>
-    <li>
-      Produce outputs that are inherently re-usable and discoverable at a URL –
-      for example, software-as-a-service products, data sets, content in HTML
-      format, APIs, wikis, training manuals
-    </li>
-    <li>
-      Disseminate outputs through networks and scalable digital channels,
-      including “inbound” channels such as Search Engine Optimization / Content
-      Marketing and API
-    </li>
-    <li>
-      Measure impact using volume of inbound hyperlinks, API calls, app
-      installs, and downloads
-    </li>
-    <li>
-      Produce outputs which are dynamic: over time, they are iterated, improved,
-      or deprecated if no longer relevant. New fellows often build on outputs
-      developed by alumni
-    </li>
-    <li>Operate as an open community</li>
-
-    <p>
-      We place a strong emphasis on networking and knowledge transfer, creating
-      connections between practitioner communities in advocacy, public sector,
-      service design, digital government, cultural transformation, internet
-      governance, and technology ethics. Our campuses act as a physical hub for
-      these communities, hosting hundreds of events each year. Past events
-      include Extinction Rebellion’s non-violent direct action training, the
-      launch of the Labour Party’s Digital Manifesto, and hackathons on local
-      finance and tactical voting.
-    </p>
+        <p>
+          We place a strong emphasis on networking and knowledge transfer,
+          creating connections between practitioner communities in advocacy,
+          public sector, service design, digital government, cultural
+          transformation, internet governance, and technology ethics. Our
+          campuses act as a physical hub for these communities, hosting hundreds
+          of events each year. Past events include Extinction Rebellion’s
+          non-violent direct action training, the launch of the Labour Party’s
+          Digital Manifesto, and hackathons on local finance and tactical
+          voting.
+        </p>
+      </div>
+    </Reveal>
   </section>
 
   <section id="library">
@@ -436,6 +446,30 @@
       commitment to…
     </p>
     <h3>Join</h3>
+    <div>
+      <Form
+        onDone={() => {}}
+        handleSubmit={() => {
+          return new Promise(resolve => setTimeout(resolve, 2000));
+        }}>
+        <span class="title">Join Newspeak House</span>
+        <span class="description">As a member...</span>
+        <div class="input">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="joe@bloggs.com"
+            required />
+        </div>
+        <div class="input">
+          <label for="application">Application Text</label>
+          <textarea id="application" name="application" minlength="10" />
+        </div>
+      </Form>
+    </div>
+
     <h3>Merchandise</h3>
   </section>
 </div>
