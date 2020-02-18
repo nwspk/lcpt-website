@@ -6,18 +6,13 @@
   export let success;
   export let error;
   export let onClick;
-  export let backgroundColor = '#1fd186';
   export let icon = "";
 </script>
 
 <style>
   button {
-    width: 100%;
-    color: white;
+    /* width: 100%; */
     border: none;
-    border-radius: 4px;
-    padding: 10px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
@@ -28,6 +23,12 @@
     width: 100%;
     height: 56px;
     position: relative;
+
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    color: #f2f2f2 !important;
+    display: inline-block;
+    margin-bottom: 50px;
   }
 
   button:not(.success):not(.pending):not(:disabled) {
@@ -72,7 +73,6 @@
 </style>
 
 <button
-  style={backgroundColor ? `background-color:${backgroundColor};` : ''}
   disabled={disabled || pending || success}
   class:disabled
   class:pending

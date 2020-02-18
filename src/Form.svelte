@@ -100,7 +100,7 @@
     border: 1px solid #dddddd;
     box-sizing: border-box;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
-    border-radius: 4px;
+    /* border-radius: 4px; */
     width: 100%;
     font-size: 17px;
     line-height: 22px;
