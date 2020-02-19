@@ -116,7 +116,11 @@
       <br>
       Our goal is the operational reform of civic institutions, including (but not limited to) government departments, thinktanks, activist networks, libraries, charities, universities, trade
       unions, newspapers, and political parties.
-          <Reveal>
+    </p>
+    <p>
+      <a href="mailto:hello@political.tech">hello@political.tech</a>
+    </p>
+     <Reveal>
       <div slot="less">
       </div>
       <div slot="more">
@@ -185,6 +189,7 @@
         </p>
 
         <h3>News Coverage</h3>
+        <p>
         <li>
           <a href="https://www.bbc.co.uk/news/education-51281722" target="_blank">Election Results Mean All Nighters For Politicians, Pundits—And Wikipedia
           Editors</a>, Fortune, 13 December 2019
@@ -200,13 +205,10 @@
         <li>
           <a href="https://www.bbc.co.uk/news/education-51281722" target="_blank">Dissatisfaction with democracy 'at record high'</a>, BBC News, 29 January 2020
         </li>
+        </p>
   </div>
     </Reveal>
 
-    </p>
-    <p>
-      <a href="mailto:hello@political.tech">hello@political.tech</a>
-    </p>
     <nav>
       <div>
         <a href="#library" class="Clarendon-Heavy">Library</a>
