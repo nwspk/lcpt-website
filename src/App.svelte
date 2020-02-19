@@ -111,75 +111,12 @@
 <div class="cont">
   <section class="top">
     <p class="description">
-      A society of researchers and practitioners established in 2015 to study,
-      nurture and inspire emerging communities of practice across the public
-      sector and civil society in the UK. Our goal is the operational reform of
-      civic institutions, including (but not limited to) government departments,
-      thinktanks, activist networks, libraries, charities, universities, trade
+      A society of researchers and practitioners established in 2015 to study, nurture and inspire emerging communities of practice across the public sector and civil society in the UK.
+      <br>
+      <br>
+      Our goal is the operational reform of civic institutions, including (but not limited to) government departments, thinktanks, activist networks, libraries, charities, universities, trade
       unions, newspapers, and political parties.
-    </p>
-    <p>
-      <a href="mailto:hello@political.tech">hello@political.tech</a>
-    </p>
-    <nav>
-      <div>
-        <a href="#library" class="Clarendon-Heavy">Library</a>
-        <span class="description">Research, tools, data, and more</span>
-      </div>
-      <div>
-        <a href="#news" class="Clarendon-Heavy">News</a>
-        <span class="description">What people have been writing about us</span>
-      </div>
-      <div>
-        <a href="#fellowship" class="Clarendon-Heavy">Fellowship</a>
-        <span class="description">
-          Members recognised for their outstanding achievements
-        </span>
-      </div>
-      <div>
-        <a href="#residency" class="Clarendon-Heavy">Residency Programme</a>
-        <span class="description">
-          Study with us to prepare for your fellowship
-        </span>
-      </div>
-      <div>
-        <a href="#board" class="Clarendon-Heavy">Board</a>
-        <span class="description">
-          Members responsible for the governance of the college
-        </span>
-      </div>
-      <div>
-        <a href="#campuses" class="Clarendon-Heavy">Campuses</a>
-        <span class="description">
-          The college is a confederation of independent campuses in the UK
-        </span>
-      </div>
-      <div>
-        <a href="#membership" class="Clarendon-Heavy">Membership</a>
-        <span class="description">
-          Join a network of pioneers in UK public sector and civil society
-        </span>
-      </div>
-      <div>
-        <a href="#events" class="Clarendon-Heavy">Public Events</a>
-        <span class="description">
-          Workshops, hackathons, conferences, meetups, lectures, and more
-        </span>
-      </div>
-      <div>
-        <a href="#eventarchive" class="Clarendon-Heavy">Event Archive</a>
-        <span class="description">
-          Everything that's ever happened at the college
-        </span>
-      </div>
-    </nav>
-  </section>
-
-  <section id="approach">
-    <h2 class="Clarendon-Heavy">
-      <a href="#approach" class="hash-link">Approach</a>
-    </h2>
-    <Reveal>
+          <Reveal>
       <div slot="less">
         <p>
           Our approach responds to limitations in the model of think tanks and
@@ -246,8 +183,78 @@
           Digital Manifesto, and hackathons on local finance and tactical
           voting.
         </p>
-      </div>
+
+        <h3>News Coverage</h3>
+        <li>
+          <a href="https://www.bbc.co.uk/news/education-51281722" target="_blank">Election Results Mean All Nighters For Politicians, Pundits—And Wikipedia
+          Editors</a>, Fortune, 13 December 2019
+        </li>
+        <li>
+          <a href="https://www.theguardian.com/politics/2017/jun/06/democracy-theres-an-app-for-that-the-tech-upstarts-trying-to-hack-british-politics" target="_blank">Democracy? There’s an app for that – the tech upstarts trying to ‘hack’
+          British politics</a>, The Guardian, 6 June 2017
+        </li>
+        <li>
+          <a href="https://www.telegraph.co.uk/technology/2019/09/18/way-social-networks-shape-politics-truly-terrifying/" target="_blank">The way social media is shaping our politics is truly terrifying</a>, The
+          Telegraph, 18 September 2018
+        </li>
+        <li>
+          <a href="https://www.bbc.co.uk/news/education-51281722" target="_blank">Dissatisfaction with democracy 'at record high'</a>, BBC News, 29 January 2020
+        </li>
+  </div>
     </Reveal>
+
+    </p>
+    <p>
+      <a href="mailto:hello@political.tech">hello@political.tech</a>
+    </p>
+    <nav>
+      <div>
+        <a href="#library" class="Clarendon-Heavy">Library</a>
+        <span class="description">Research, tools, data, and more</span>
+      </div>
+      <div>
+        <a href="#fellowship" class="Clarendon-Heavy">Fellowship</a>
+        <span class="description">
+          Members recognised for their outstanding achievements
+        </span>
+      </div>
+      <div>
+        <a href="#residency" class="Clarendon-Heavy">Residency Programme</a>
+        <span class="description">
+          Study with us to prepare for your fellowship
+        </span>
+      </div>
+      <div>
+        <a href="#board" class="Clarendon-Heavy">Board</a>
+        <span class="description">
+          Members responsible for the governance of the college
+        </span>
+      </div>
+      <div>
+        <a href="#campuses" class="Clarendon-Heavy">Campuses</a>
+        <span class="description">
+          The college is a confederation of independent campuses in the UK
+        </span>
+      </div>
+      <div>
+        <a href="#membership" class="Clarendon-Heavy">Membership</a>
+        <span class="description">
+          Join a network of pioneers in UK public sector and civil society
+        </span>
+      </div>
+      <div>
+        <a href="#events" class="Clarendon-Heavy">Public Events</a>
+        <span class="description">
+          Workshops, hackathons, conferences, meetups, lectures, and more
+        </span>
+      </div>
+      <div>
+        <a href="#eventarchive" class="Clarendon-Heavy">Event Archive</a>
+        <span class="description">
+          Everything that's ever happened at the college
+        </span>
+      </div>
+    </nav>
   </section>
 
   <section id="library">
@@ -257,62 +264,45 @@
     <h3>Latest Research</h3>
     <ul>
       <li>
-        The Election Tech Handbook: the primary resource & community for
-        developers building anything to do with UK elections, whether
-        journalists, campaigners or curious citizens
-      </li>
-      <li>Society Scraper</li>
-      <li>Linkbaby.io</li>
-      <li>
-        CharityBase: a searchable online database of information on the
-        activities, locations and finances of every charity in the UK, with an
-        API
+        <a href="http://electiontechhandbook.uk" target="_blank">The Election Tech Handbook</a>, the primary resource & community for developers building anything to do with UK elections, whether journalists, campaigners or curious citizens
       </li>
       <li>
-        Who Targets Me?: a leading NGO in the debate around targeted political
-        advertising, centred around research enabled by a custom browser
-        extension that allows citizens to see which political organizations are
-        targeting them. Has been installed by over 30,000 users.
+        <a href="https://unisocieties.com/" target="_blank">Student Society Scraper</a>, details of >14000 student societies, scraped from their university directories.
+      </li>
+
+      <li>
+        <a href="https://charitybase.uk/" target="_blank">CharityBase</a>, a searchable online database of information on the activities, locations and finances of every charity in the UK, with an API
+      </li>
+      <li>
+        <a href="https://whotargets.me/en/" target="_blank">Who Targets Me?</a>, a leading NGO in the debate around targeted political advertising, centred around research enabled by a custom browser extension that allows citizens to see which political organizations are targeting them. Has been installed by over 30,000 users.
       </li>
     </ul>
     <h3>Collections</h3>
     <ul>
-      <li>Discussion spaces</li>
-      <li>Jobs boards</li>
-      <li>Organising tools</li>
-      <li>Election Tech</li>
+      <li><a href="https://docs.google.com/spreadsheets/d/1KYjJfFHwLXQjhAXl1Th1ktX2VrnmvpSl-Xsl7yoblLM/edit#gid=0" target="blank">Open channels</a>
+      </li>
+      <li><a href="https://docs.google.com/spreadsheets/d/1dFVoF6f9VU5pjaGhyyvQaBN0n6ae-iLCtlvsO1N2jhA/edit#gid=0" target="blank">Jobs boards</a>
+      </li>
+      <li><a href="https://docs.google.com/spreadsheets/d/1qEnTk5rMMzv-gEshDehbkQDY8aspFow-m439kMF4WEE/edit#gid=0" target="blank">Organising tools</a></li>
     </ul>
-  </section>
-  <section id="news">
-    <h2 class="Clarendon-Heavy">
-      <a href="#news" News class="hash-link">News Coverage</a>
-    </h2>
-    <li>
-      “Election Results Mean All Nighters For Politicians, Pundits—And Wikipedia
-      Editors”, Fortune, 13 December 2019
-    </li>
-    <li>
-      “Democracy? There’s an app for that – the tech upstarts trying to ‘hack’
-      British politics”, The Guardian, 6 June 2017
-    </li>
-    <li>
-      “The way social media is shaping our politics is truly terrifying”, The
-      Telegraph, 18 September 2018
-    </li>
   </section>
   <section id="fellowship">
     <h2 class="Clarendon-Heavy">
       <a href="#fellowship" class="hash-link">Fellowship</a>
     </h2>
-    <p>
-      Fellows are members of the London College of Political Technologists who
+    <Reveal>
+      <div slot="less">
+        <p>
+                Fellows are members of the London College of Political Technologists who
       are recognised as having created a highly influential piece of research or
       made a landmark discovery.
-    </p>
+        </p>
+    </div>
+      <div slot="more">
     <h3>Apply for Fellowship</h3>
     <p>
       Fellowship candidates may submit their projects or discoveries for
-      consideration [by some process].
+      consideration [by some process tbd].
     </p>
     <h3>Fellowship Directory</h3>
     <h5>Notable Alumni</h5>
@@ -349,6 +339,8 @@
       <li>Phoebe Tickell Digital Grants, National Lottery Community Fund</li>
       <li>Jo Kerr Head of Digital, Turn2us anti-poverty charity</li>
     </ul>
+      </div>
+    </Reveal>
   </section>
   <section id="residency">
     <h2 class="Clarendon-Heavy">
@@ -442,8 +434,7 @@
       <a href="#membership" class="hash-link">Membership</a>
     </h2>
     <p>
-      To be a member of The London College of Political Technology is a
-      commitment to…
+      To be a member of The London College of Political Technology [means something...!]
     </p>
     <h3>Join</h3>
     <div>
