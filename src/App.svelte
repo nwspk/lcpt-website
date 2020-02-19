@@ -118,6 +118,8 @@
       unions, newspapers, and political parties.
           <Reveal>
       <div slot="less">
+      </div>
+      <div slot="more">
         <p>
           Our approach responds to limitations in the model of think tanks and
           university research centres which:
@@ -143,8 +145,6 @@
           </li>
           <li>Operate as closed communities</li>
         </ol>
-      </div>
-      <div slot="more">
         <p>By contrast we:</p>
 
         <li>
