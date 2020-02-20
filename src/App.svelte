@@ -111,11 +111,9 @@
 <div class="cont">
   <section class="top">
     <p class="description">
-      A society of researchers and practitioners established in 2015 to study, nurture and inspire emerging communities of practice across the public sector and civil society in the UK.
-      <br>
-      <br>
-      Our goal is the operational reform of civic institutions, including (but not limited to) government departments, thinktanks, activist networks, libraries, charities, universities, trade
-      unions, newspapers, and political parties.
+      <h3>A society of researchers and practitioners established in 2015 to study, nurture and inspire emerging communities of practice across the public sector and civil society in the UK.</h3>
+        
+      <h3>Our goal is the operational reform of civic institutions, including (but not limited to) government departments, thinktanks, activist networks, libraries, charities, regulators, universities, trade unions, local authorities, newspapers, and political parties.</h3>
     </p>
     <p>
       <a href="mailto:hello@political.tech">hello@political.tech</a>
@@ -125,68 +123,20 @@
       </div>
       <div slot="more">
         <p>
-          Our approach responds to limitations in the model of think tanks and
-          university research centres which:
-        </p>
-        <ol>
-          <li>
-            Determine research questions internally, with academic literature
-            providing the main external reference points (“inside-out” approach)
-          </li>
-          <li>
-            Publish reports in formats (print / pdf) and media (eg paywalled
-            academic journals) which impede discoverability by wider audiences
-          </li>
-          <li>
-            Disseminate research findings through channels which have limited
-            scalability and measurability (eg launch events)
-          </li>
-          <li>
-            Find it difficult to attribute real-world decisions to research
-          </li>
-          <li>
-            Produce outputs which are static, leading to slow decay over time
-          </li>
-          <li>Operate as closed communities</li>
-        </ol>
-        <p>By contrast we:</p>
-
-        <li>
-          Determine focus areas based on user research and insight into unmet
-          needs (“outside-in” approach)
-        </li>
-        <li>
-          Produce outputs that are inherently re-usable and discoverable at a
-          URL – for example, software-as-a-service products, data sets, content
-          in HTML format, APIs, wikis, training manuals
-        </li>
-        <li>
-          Disseminate outputs through networks and scalable digital channels,
-          including “inbound” channels such as Search Engine Optimization /
-          Content Marketing and API
-        </li>
-        <li>
-          Measure impact using volume of inbound hyperlinks, API calls, app
-          installs, and downloads
-        </li>
-        <li>
-          Produce outputs which are dynamic: over time, they are iterated,
-          improved, or deprecated if no longer relevant. New fellows often build
-          on outputs developed by alumni
-        </li>
-        <li>Operate as an open community</li>
-
-        <p>
-          We place a strong emphasis on networking and knowledge transfer,
-          creating connections between practitioner communities in advocacy,
-          public sector, service design, digital government, cultural
-          transformation, internet governance, and technology ethics. Our
-          campuses act as a physical hub for these communities, hosting hundreds
-          of events each year. Past events include Extinction Rebellion’s
-          non-violent direct action training, the launch of the Labour Party’s
-          Digital Manifesto, and hackathons on local finance and tactical
-          voting.
-        </p>
+      <h3>Our approach responds to limitations in the model of think tanks and academic research centres</h3>
+    </p>
+      <li>
+        We operate as an open community, and our research priorities are inspired by user research and insights into unmet needs, as well as building on past work and academic literature
+      </li>
+      <li>
+        We produce outputs that are re-usable and discoverable – for example, software-as-a-service products, datasets with APIs, and content in HTML and other native digital formats, instead of long reports in conventional and inaccessible formats (print / pdf / paywalled academic journals)
+      </li>
+      <li>
+        We disseminate research findings through targeted networks and scalable digital channels, including “inbound” channels such as Search Engine Optimization / Content Marketing and API, and are experimental and critical about how we measure impact; volume of inbound hyperlinks, downloads, API calls...
+      </li>
+    <p>
+      We place a strong emphasis on networking and knowledge transfer, creating connections between practitioner communities in advocacy, public sector, service design, digital government, cultural transformation, internet governance, and technology ethics. Our campuses act as a physical hub for these communities, hosting hundreds of events each year. Past events include Extinction Rebellion’s non-violent direct action training, the launch of the Labour Party’s Digital Manifesto, and hackathons on local finance and tactical voting.
+    </p>
 
         <h3>News Coverage</h3>
         <p>
