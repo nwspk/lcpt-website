@@ -27,6 +27,28 @@
 </script>
 
 <style>
+  .header-image {
+    width: 100%;
+    height: auto !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .title-cont p {
+    max-width: 800px;
+    min-width: 300px;
+    width: 80%;
+  }
+
+  .title-cont p.description {
+    font-size: 140%;
+  }
+
+  .title-cont a {
+    color: #63aef0;
+  }
+
   .cont {
     margin-top: 2vw;
     margin-left: 3vw;
@@ -42,17 +64,29 @@
   }
 
   .title-cont {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    margin-left: 6vw;
-    margin-top: 6vw;
+    padding-left: 6vw;
+    padding-top: 6vw;
+    background-color: #1a1a1a;
+    color: #f2f2f2;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .title-cont > .content {
+    position: relative;
+    z-index: 2;
   }
 
   .title-cont img {
     height: 10.5vw;
     margin-top: 20px;
     margin-right: 5vw;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
   }
 
   section {
@@ -101,64 +135,124 @@
 </style>
 
 <div class="title-cont">
-  <img src="/icon.svg" alt="" />
-  <h1 class="Clarendon-Heavy">
-    The London College of
+  <div class="content">
+    <div class="title">
+      <!-- <img src="/icon.svg" alt="" /> -->
+      <h1 class="Clarendon-Heavy">
+        The London College of
+        <br />
+        Political Technologists
+      </h1>
+    </div>
     <br />
-    Political Technologists
-  </h1>
+    <p class="description">
+      <span>
+        A society of researchers and practitioners established in 2015 to study,
+        nurture and inspire emerging communities of practice across the public
+        sector and civil society in the UK.
+      </span>
+      <br />
+      <br />
+      <span>
+        Our goal is the operational reform of civic institutions, including (but
+        not limited to) government departments, thinktanks, activist networks,
+        libraries, charities, regulators, universities, trade unions, local
+        authorities, newspapers, and political parties.
+      </span>
+    </p>
+    <br />
+    <a href="mailto:hello@political.tech">hello@political.tech</a>
+    <p>
+      <Reveal
+        openText='Open Up'
+        closeText='By Bye'
+        showClose={false}
+      >
+        <div slot="less" />
+        <div slot="more">
+          <p>
+            <span>
+              Our approach responds to limitations in the model of think tanks
+              and academic research centres
+            </span>
+          </p>
+          <li>
+            We operate as an open community, and our research priorities are
+            inspired by user research and insights into unmet needs, as well as
+            building on past work and academic literature
+          </li>
+          <li>
+            We produce outputs that are re-usable and discoverable – for
+            example, software-as-a-service products, datasets with APIs, and
+            content in HTML and other native digital formats, instead of long
+            reports in conventional and inaccessible formats (print / pdf /
+            paywalled academic journals)
+          </li>
+          <li>
+            We disseminate research findings through targeted networks and
+            scalable digital channels, including “inbound” channels such as
+            Search Engine Optimization / Content Marketing and API, and are
+            experimental and critical about how we measure impact; volume of
+            inbound hyperlinks, downloads, API calls...
+          </li>
+          <p>
+            We place a strong emphasis on networking and knowledge transfer,
+            creating connections between practitioner communities in advocacy,
+            public sector, service design, digital government, cultural
+            transformation, internet governance, and technology ethics. Our
+            campuses act as a physical hub for these communities, hosting
+            hundreds of events each year. Past events include Extinction
+            Rebellion’s non-violent direct action training, the launch of the
+            Labour Party’s Digital Manifesto, and hackathons on local finance
+            and tactical voting.
+          </p>
+
+          <h3>News Coverage</h3>
+          <p>
+            <li>
+              <a
+                href="https://www.bbc.co.uk/news/education-51281722"
+                target="_blank">
+                Election Results Mean All Nighters For Politicians, Pundits—And
+                Wikipedia Editors
+              </a>
+              , Fortune, 13 December 2019
+            </li>
+            <li>
+              <a
+                href="https://www.theguardian.com/politics/2017/jun/06/democracy-theres-an-app-for-that-the-tech-upstarts-trying-to-hack-british-politics"
+                target="_blank">
+                Democracy? There’s an app for that – the tech upstarts trying to
+                ‘hack’ British politics
+              </a>
+              , The Guardian, 6 June 2017
+            </li>
+            <li>
+              <a
+                href="https://www.telegraph.co.uk/technology/2019/09/18/way-social-networks-shape-politics-truly-terrifying/"
+                target="_blank">
+                The way social media is shaping our politics is truly terrifying
+              </a>
+              , The Telegraph, 18 September 2018
+            </li>
+            <li>
+              <a
+                href="https://www.bbc.co.uk/news/education-51281722"
+                target="_blank">
+                Dissatisfaction with democracy 'at record high'
+              </a>
+              , BBC News, 29 January 2020
+            </li>
+          </p>
+        </div>
+      </Reveal>
+    </p>
+  </div>
+  <img src="/header.png" alt="" class="header-image" />
 </div>
+
 <div class="cont">
   <section class="top">
-    <p class="description">
-      <h3>A society of researchers and practitioners established in 2015 to study, nurture and inspire emerging communities of practice across the public sector and civil society in the UK.</h3>
-        
-      <h3>Our goal is the operational reform of civic institutions, including (but not limited to) government departments, thinktanks, activist networks, libraries, charities, regulators, universities, trade unions, local authorities, newspapers, and political parties.</h3>
-    </p>
-    <p>
-      <a href="mailto:hello@political.tech">hello@political.tech</a>
-    </p>
-     <Reveal>
-      <div slot="less">
-      </div>
-      <div slot="more">
-        <p>
-      <h3>Our approach responds to limitations in the model of think tanks and academic research centres</h3>
-    </p>
-      <li>
-        We operate as an open community, and our research priorities are inspired by user research and insights into unmet needs, as well as building on past work and academic literature
-      </li>
-      <li>
-        We produce outputs that are re-usable and discoverable – for example, software-as-a-service products, datasets with APIs, and content in HTML and other native digital formats, instead of long reports in conventional and inaccessible formats (print / pdf / paywalled academic journals)
-      </li>
-      <li>
-        We disseminate research findings through targeted networks and scalable digital channels, including “inbound” channels such as Search Engine Optimization / Content Marketing and API, and are experimental and critical about how we measure impact; volume of inbound hyperlinks, downloads, API calls...
-      </li>
-    <p>
-      We place a strong emphasis on networking and knowledge transfer, creating connections between practitioner communities in advocacy, public sector, service design, digital government, cultural transformation, internet governance, and technology ethics. Our campuses act as a physical hub for these communities, hosting hundreds of events each year. Past events include Extinction Rebellion’s non-violent direct action training, the launch of the Labour Party’s Digital Manifesto, and hackathons on local finance and tactical voting.
-    </p>
-
-        <h3>News Coverage</h3>
-        <p>
-        <li>
-          <a href="https://www.bbc.co.uk/news/education-51281722" target="_blank">Election Results Mean All Nighters For Politicians, Pundits—And Wikipedia
-          Editors</a>, Fortune, 13 December 2019
-        </li>
-        <li>
-          <a href="https://www.theguardian.com/politics/2017/jun/06/democracy-theres-an-app-for-that-the-tech-upstarts-trying-to-hack-british-politics" target="_blank">Democracy? There’s an app for that – the tech upstarts trying to ‘hack’
-          British politics</a>, The Guardian, 6 June 2017
-        </li>
-        <li>
-          <a href="https://www.telegraph.co.uk/technology/2019/09/18/way-social-networks-shape-politics-truly-terrifying/" target="_blank">The way social media is shaping our politics is truly terrifying</a>, The
-          Telegraph, 18 September 2018
-        </li>
-        <li>
-          <a href="https://www.bbc.co.uk/news/education-51281722" target="_blank">Dissatisfaction with democracy 'at record high'</a>, BBC News, 29 January 2020
-        </li>
-        </p>
-  </div>
-    </Reveal>
-
     <nav>
       <div>
         <a href="#library" class="Clarendon-Heavy">Library</a>
@@ -216,26 +310,57 @@
     <h3>Latest Research</h3>
     <ul>
       <li>
-        <a href="http://electiontechhandbook.uk" target="_blank">The Election Tech Handbook</a>, the primary resource & community for developers building anything to do with UK elections, whether journalists, campaigners or curious citizens
+        <a href="http://electiontechhandbook.uk" target="_blank">
+          The Election Tech Handbook
+        </a>
+        , the primary resource & community for developers building anything to
+        do with UK elections, whether journalists, campaigners or curious
+        citizens
       </li>
       <li>
-        <a href="https://unisocieties.com/" target="_blank">Student Society Scraper</a>, details of >14000 student societies, scraped from their university directories.
+        <a href="https://unisocieties.com/" target="_blank">
+          Student Society Scraper
+        </a>
+        , details of >14000 student societies, scraped from their university
+        directories.
       </li>
 
       <li>
-        <a href="https://charitybase.uk/" target="_blank">CharityBase</a>, a searchable online database of information on the activities, locations and finances of every charity in the UK, with an API
+        <a href="https://charitybase.uk/" target="_blank">CharityBase</a>
+        , a searchable online database of information on the activities,
+        locations and finances of every charity in the UK, with an API
       </li>
       <li>
-        <a href="https://whotargets.me/en/" target="_blank">Who Targets Me?</a>, a leading NGO in the debate around targeted political advertising, centred around research enabled by a custom browser extension that allows citizens to see which political organizations are targeting them. Has been installed by over 30,000 users.
+        <a href="https://whotargets.me/en/" target="_blank">Who Targets Me?</a>
+        , a leading NGO in the debate around targeted political advertising,
+        centred around research enabled by a custom browser extension that
+        allows citizens to see which political organizations are targeting them.
+        Has been installed by over 30,000 users.
       </li>
     </ul>
     <h3>Collections</h3>
     <ul>
-      <li><a href="https://docs.google.com/spreadsheets/d/1KYjJfFHwLXQjhAXl1Th1ktX2VrnmvpSl-Xsl7yoblLM/edit#gid=0" target="blank">Open channels</a>
+      <li>
+        <a
+          href="https://docs.google.com/spreadsheets/d/1KYjJfFHwLXQjhAXl1Th1ktX2VrnmvpSl-Xsl7yoblLM/edit#gid=0"
+          target="blank">
+          Open channels
+        </a>
       </li>
-      <li><a href="https://docs.google.com/spreadsheets/d/1dFVoF6f9VU5pjaGhyyvQaBN0n6ae-iLCtlvsO1N2jhA/edit#gid=0" target="blank">Jobs boards</a>
+      <li>
+        <a
+          href="https://docs.google.com/spreadsheets/d/1dFVoF6f9VU5pjaGhyyvQaBN0n6ae-iLCtlvsO1N2jhA/edit#gid=0"
+          target="blank">
+          Jobs boards
+        </a>
       </li>
-      <li><a href="https://docs.google.com/spreadsheets/d/1qEnTk5rMMzv-gEshDehbkQDY8aspFow-m439kMF4WEE/edit#gid=0" target="blank">Organising tools</a></li>
+      <li>
+        <a
+          href="https://docs.google.com/spreadsheets/d/1qEnTk5rMMzv-gEshDehbkQDY8aspFow-m439kMF4WEE/edit#gid=0"
+          target="blank">
+          Organising tools
+        </a>
+      </li>
     </ul>
   </section>
   <section id="fellowship">
@@ -245,52 +370,56 @@
     <Reveal>
       <div slot="less">
         <p>
-                Fellows are members of the London College of Political Technologists who
-      are recognised as having created a highly influential piece of research or
-      made a landmark discovery.
+          Fellows are members of the London College of Political Technologists
+          who are recognised as having created a highly influential piece of
+          research or made a landmark discovery.
         </p>
-    </div>
+      </div>
       <div slot="more">
-    <h3>Apply for Fellowship</h3>
-    <p>
-      Fellowship candidates may submit their projects or discoveries for
-      consideration [by some process tbd].
-    </p>
-    <h3>Fellowship Directory</h3>
-    <h5>Notable Alumni</h5>
-    <ul>
-      <!-- {#each alumni as alum}
+        <h3>Apply for Fellowship</h3>
+        <p>
+          Fellowship candidates may submit their projects or discoveries for
+          consideration [by some process tbd].
+        </p>
+        <h3>Fellowship Directory</h3>
+        <h5>Notable Alumni</h5>
+        <ul>
+          <!-- {#each alumni as alum}
       <li>{alum.name}</li>
     {/each} -->
-      <li>Josie Fraser Head of Social Technology, DCMS</li>
-      <li>Imeh Akpan GOV.UK User Insights Lead, Government Digital Service</li>
-      <li>
-        Dr Lisa Murphy National Medical Director’s Clinical Fellow, Public
-        Health England
-      </li>
-      <li>
-        Dr Rufus Pollock Founder & President, Open Knowledge; Shuttleworth
-        Fellow
-      </li>
-      <li>
-        Dee Harding Head of Intelligence, Equality & Human Rights Commission
-      </li>
-      <li>
-        Jonathan Penn Google Tech Policy Fellow; MIT Media Lab; Berkman Klein
-        Centre
-      </li>
-      <li>
-        Carl Miller Research Director, Centre for the Analysis of Social Media,
-        Demos
-      </li>
-      <li>Areeq Chowdhury Head of Future Advocacy Think Tank</li>
-      <li>Tamara Borine Data Scientist, Competition Markets Authority</li>
-      <li>John Cummings Wikimedian in Residence, UNESCO</li>
-      <li>Rich Mason Researcher, RSA Future Work Centre</li>
-      <li>James Moulding Extinction Rebellion Election Coordinator</li>
-      <li>Phoebe Tickell Digital Grants, National Lottery Community Fund</li>
-      <li>Jo Kerr Head of Digital, Turn2us anti-poverty charity</li>
-    </ul>
+          <li>Josie Fraser Head of Social Technology, DCMS</li>
+          <li>
+            Imeh Akpan GOV.UK User Insights Lead, Government Digital Service
+          </li>
+          <li>
+            Dr Lisa Murphy National Medical Director’s Clinical Fellow, Public
+            Health England
+          </li>
+          <li>
+            Dr Rufus Pollock Founder & President, Open Knowledge; Shuttleworth
+            Fellow
+          </li>
+          <li>
+            Dee Harding Head of Intelligence, Equality & Human Rights Commission
+          </li>
+          <li>
+            Jonathan Penn Google Tech Policy Fellow; MIT Media Lab; Berkman
+            Klein Centre
+          </li>
+          <li>
+            Carl Miller Research Director, Centre for the Analysis of Social
+            Media, Demos
+          </li>
+          <li>Areeq Chowdhury Head of Future Advocacy Think Tank</li>
+          <li>Tamara Borine Data Scientist, Competition Markets Authority</li>
+          <li>John Cummings Wikimedian in Residence, UNESCO</li>
+          <li>Rich Mason Researcher, RSA Future Work Centre</li>
+          <li>James Moulding Extinction Rebellion Election Coordinator</li>
+          <li>
+            Phoebe Tickell Digital Grants, National Lottery Community Fund
+          </li>
+          <li>Jo Kerr Head of Digital, Turn2us anti-poverty charity</li>
+        </ul>
       </div>
     </Reveal>
   </section>
@@ -386,7 +515,8 @@
       <a href="#membership" class="hash-link">Membership</a>
     </h2>
     <p>
-      To be a member of The London College of Political Technology [means something...!]
+      To be a member of The London College of Political Technology [means
+      something...!]
     </p>
     <h3>Join</h3>
     <div>
