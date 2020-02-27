@@ -87,7 +87,9 @@ h3 {
     }
 
     .title-cont .description {
-        font-size: 100%!important;
+        font-size: 100% !important;
+        width: 100% !important;
+        padding-right:6vw;
     }
 
     h2 {
