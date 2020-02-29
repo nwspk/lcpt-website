@@ -144,37 +144,31 @@
         Political Technologists
       </h1>
     </div>
-    <br />
     <p class="description">
-      <span>
         A society of researchers and practitioners established in 2015 to study,
         nurture and inspire emerging communities of practice across the public
         sector and civil society in the UK.
-      </span>
       <br />
       <br />
-      <span>
         Our goal is the operational reform of civic institutions, including (but
         not limited to) government departments, thinktanks, activist networks,
         libraries, charities, regulators, universities, trade unions, local
         authorities, newspapers, and political parties.
-      </span>
-    </p>
-    <br />
+      <br/>
+      <br/>
     <a href="mailto:hello@political.tech">hello@political.tech</a>
+    </p>
     <p>
       <Reveal
-        openText='Open Up'
-        closeText='By Bye'
+        openText='About'
+        closeText='null'
         showClose={false}
       >
         <div slot="less" />
         <div slot="more">
           <p>
-            <span>
-              Our approach responds to limitations in the model of think tanks
-              and academic research centres
-            </span>
+            Our approach responds to limitations in the model of think tanks
+            and academic research centres
           </p>
           <li>
             We operate as an open community, and our research priorities are
@@ -382,7 +376,7 @@
           consideration [by some process tbd].
         </p>
         <h3>Fellowship Directory</h3>
-        <h5>Notable Alumni</h5>
+        Notable Alumni
         <ul>
           <!-- {#each alumni as alum}
       <li>{alum.name}</li>
