@@ -48,25 +48,27 @@ h2>a {
 
 h1 {
     font-size: 7vw;
-    line-height: 6vw;
+    line-height: 6.5vw;
     margin-top: 20px;
     padding-top: 0;
     margin-bottom: 0;
 }
 
 h2 {
-    font-size: 4vw;
+    font-size: 6vw;
     margin: 0;
     margin-top: 20px;
+    margin-bottom: 0px;
     white-space: nowrap;
 }
 
 h3 {
-    font-size: 2vw;
+    font-size: 3vw;
     font-family: ClarendonBTWXX-Roman, Georgia, "Times New Roman", Times, serif;
     font-weight: normal;
     font-style: normal;
-    padding-left: 1vw;
+    margin-top: 35px;
+    margin-bottom: 0px;
 }
 
 
@@ -98,7 +100,7 @@ h3 {
     }
 
     h3 {
-        font-size: 5vw;
+        font-size: 6vw;
     }
 }
 
