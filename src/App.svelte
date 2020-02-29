@@ -43,6 +43,7 @@
 
   .title-cont p.description {
     font-size: 140%;
+    text-shadow: 1px 1px 4px #333;
   }
 
   .title-cont a {
