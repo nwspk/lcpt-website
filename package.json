@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "luxon": "^1.22.0",
-    "marked": "^0.8.0",
+    "marked": "^4.0.10",
     "sirv-cli": "^0.4.4"
   }
 }
